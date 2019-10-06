@@ -14,7 +14,7 @@ public class AggreagtionController {
 	
 	@RequestMapping(method = RequestMethod.GET, value = "/")
 	public String getAllPatients() {
-		return "Ok we are good";
+		return "Ok we are good .Thank you";
 	}
 	
 
