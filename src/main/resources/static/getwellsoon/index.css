@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-image: url("background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: lightblue;
+}
+
+.banner {
+  //padding: 5px;
+  margin-bottom: 35px;
+}
+
+.form {
+  background-color: white;
+  //border-radius: 5px;
+  //border: 1px solid #A0A0A0;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+.input-field {
+	width: 350px;
+	border: 1px solid #DDE3E6;
+	border-radius: 6px;
+	background-color: #FFFFFF;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding: 15px;
+  color: #8993A4;
+  font-family: Poppins;
+  font-size: 17px;
+  line-height: 26px;
+}
+
+#trial-search-form {
+	height: 508px;
+	width: 460px;
+	border-radius: 8px;
+	background-color: #FFFFFF;
+	box-shadow: 0 4px 20px 0 rgba(0,0,0,0.1);
+}
+
+#age-field {
+  margin-right: 20px;
+  width: 90px;
+  display: inline;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+#gender-field {
+  width: 202px;
+  display: inline;
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-left: 0;
+}
+
+.banner-title {
+	height: 79px;
+	width: 437px;
+	color: #2D3E50;
+	font-family: Poppins;
+	font-size: 56px;
+	font-weight: 1000;
+	line-height: 85px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.database-descr {
+  font-size: 26px;
+  margin: 0;
+}
+
+.database-count {
+  font-size: 50px;
+	font-weight: 1000;
+  margin-bottom: 0;
+}
+
+.banner-text {
+	height: 126px;
+	width: 436px;
+	color: #2D3E50;
+	font-family: Poppins;
+	font-size: 26px;
+	line-height: 42px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#trial-search-form-name {
+	height: 43px;
+	width: 259px;
+	color: #2D3E50;
+	font-family: Poppins;
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 46px;
+  margin: 0;
+  //margin: 15px 0 10px 0;
+  padding-left: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#trial-search-form-submit {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 10px;
+	height: 75px;
+	width: 380px;
+	border-radius: 37.5px;
+	background-color: #408DAC;
+	color: #FFFFFF;
+	font-family: Poppins;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 35px;
+}
+
+.database {
+  //padding: 5px;
+  //border: 2px solid red;
+  //background-color: #DCEDF0;
+  color: #407bac;
+  //width: 300px;
+}
+
+.main-page {
+  display: flex;
+  justify-content: space-between;
+  margin: 120px 320px;
+  //border: 1px solid green;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang = "en" dir = "ltr">
+  <head>
+    <meta charset = "utf-8">
+    <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link href = "https://fonts.googleapis.com/css?family=Poppins&display=swap" rel = "stylesheet">
+    <link rel = "stylesheet" type = "text/css" href = "nav.css">
+    <link rel = "stylesheet" type = "text/css" href = "results.css">
+    <title>GetWellSoon.ai</title>
+  </head>
+  <body onload = "loadPage()">
+    <script src = "results.js"></script>
+    <nav class = "nav" id = "nav">
+      <a class = "nav-logo" id = "nav-logo" href="index.html">GetWellSoon.ai</a>
+      <div class = "nav-links" id = "nav-links">
+        <a class = "nav-link" id = "about-link" href="about.html">About</a>
+        <a class = "nav-link" id = "blog-link" href="blog.html">Blog</a>
+      </div>
+    </nav>
+    <div class = "main-page" id = "main-page">
+      <div class = "container" id = "forms-container">
+        <form class = "form" id = "location-filter-form">
+          <h2 class = "form-name" id = "location-filter-form-name">I'm willing to travel</h2>
+          <div class = "radio-container">
+            <input class = "radio-field" type = "radio" value = "50" name = "location-filter">
+            <label class = "radio-name">50 miles</label>
+          </div>
+          <div class = "radio-container">
+            <input class = "radio-field" type = "radio" value = "100" name = "location-filter">
+            <label class = "radio-name">100 miles</label>
+          </div>
+          <div class = "radio-container">
+            <input class = "radio-field" type = "radio" value = "200" name = "location-filter">
+            <label class = "radio-name">200 miles</label>
+          </div>
+          <div class = "radio-container">
+            <input class = "radio-field" type = "radio" value = "any" name = "location-filter" checked>
+            <label class = "radio-name">Any distance</label>
+          </div>
+        </form>
+        <form class = "form" id = "trial-alerts-form" onsubmit = "submitForm()">
+          <h2 class = "form-name" id = "trial-alerts-form-name">Keep me posted on new trials</h2>
+          <div class = "input-container">
+            <input class = "input-field" id = "name-field" type = "text" placeholder = "Full name">
+            <input class = "input-field" id = "phone-field" type = "phone" placeholder = "Phone">
+          </div>
+          <div class = "input-container">
+            <input class = "input-field" id = "email-field" type = "email" placeholder = "Email">
+          </div>
+          <div class = "input-container">
+            <input class = "input-field" id = "condition-field" type = "text" placeholder = "Medical condition">
+          </div>
+          <div class = "input-container">
+            <input class = "input-field" id = "age-field" type = "text" placeholder = "Age">
+            <input class = "input-field" id = "gender-field" type = "text" placeholder = "Gender">
+            <!--<input class = "input-field" id = "age-field" type = "text" placeholder = "Age">-->
+          </div>
+          <div class = "input-container">
+            <input class = "input-field" id = "location-field" type = "text" placeholder = "Location">
+          </div>
+          <input id = "trial-alerts-form-submit" type = "submit" value = "Send me alerts">
+        </form>
+      </div>
+      <div class = "container" id = "trials-container">
+        <div class = "container" id = "trial-count-container">
+          <h2 class = "trial-count" id = "trial-count">Loading trials, please wait...</h2>
+        </div>
+        <div class = "container" id = "accordion-container">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
