@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang = "en" dir = "ltr">
+  <head>
+    <meta charset = "utf-8">
+    <link rel = "stylesheet" type = "text/css" href = "nav.css">
+    <link rel = "stylesheet" type = "text/css" href = "index.css">
+    <title>GetWellSoon.ai</title>
+  </head>
+  <body>
+    <script src = "index.js"></script>
+    <nav class = "nav" id = "nav">
+      <a class = "nav-logo" id = "nav-logo" href="index.html">GetWellSoon.ai</a>
+      <div class = "nav-links" id = "nav-links">
+        <a class = "nav-link" id = "about-link" href="about.html">About</a>
+        <a class = "nav-link" id = "blog-link" href="blog.html">Blog</a>
+      </div>
+    </nav>
+    <div class = "main-page" id = "main-page">
+      <div class = "other-container">
+        <div class = "banner">
+          <h1 class = "banner-title">Get Well Soon</h1>
+          <p class = "banner-text">Quickly and easily search for and enroll in the perfect clinical trial that fits your medical condition</p>
+        </div>
+        <div class = "database">
+          <h1 class = "database-count">480,000</h1>
+          <p class = "database-descr">clinical trials and counting . . .</p>
+        </div>
+      </div>
+      <form class = "form" id = "trial-search-form" onsubmit = "submitForm()" action = "results.html">
+        <h2 class = "form-name" id = "trial-search-form-name">Find a trial today</h2>
+        <div class = "input-container">
+          <input class = "input-field" id = "condition-field" type = "text" placeholder = "Medical condition">
+        </div>
+        <div class = "input-container">
+          <input class = "input-field" id = "age-field" type = "text" placeholder = "Age">
+          <input class = "input-field" id = "gender-field" type = "text" placeholder = "Gender">
+        </div>
+        <div class = "input-container">
+          <input class = "input-field" id = "location-field" type = "text" placeholder = "Location">
+        </div>
+        <input id = "trial-search-form-submit" type = "submit" value = "Search">
+      </form>
+    </div>
+  </body>
+</html>
